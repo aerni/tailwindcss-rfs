@@ -1,0 +1,27 @@
+{
+  "name": "tailwindcss-rfs",
+  "version": "1.0.0",
+  "description": "Tailwind CSS plugin to generate responsive font size utilities",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "plugin",
+    "tailwindcss-plugin",
+    "rfs",
+    "responsive-font",
+    "responsive-font-size"
+  ],
+  "author": "aerni",
+  "license": "MIT",
+  "devDependencies": {
+    "lodash": "^4.17.11",
+    "postcss": "^7.0.17",
+    "rfs": "^8.0.4",
+    "tailwindcss": "^1.0.4"
+  }
+}
