@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "Tailwind CSS plugin to generate responsive font size utilities",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
+  "repository": "https://github.com/aerni/tailwindcss-rfs",
+  "bugs": "https://github.com/aerni/tailwindcss-rfs/issues",
   "keywords": [
     "tailwind",
     "tailwindcss",
