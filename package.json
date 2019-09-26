@@ -1,25 +1,49 @@
 {
-  "name": "tailwindcss-rfs",
-  "version": "1.0.0",
-  "description": "Tailwind CSS plugin to generate responsive font size utilities",
-  "main": "index.js",
-  "repository": "https://github.com/aerni/tailwindcss-rfs",
-  "bugs": "https://github.com/aerni/tailwindcss-rfs/issues",
-  "keywords": [
-    "tailwind",
-    "tailwindcss",
-    "plugin",
-    "tailwindcss-plugin",
-    "rfs",
-    "responsive-font",
-    "responsive-font-size"
-  ],
-  "author": "aerni",
-  "license": "MIT",
-  "devDependencies": {
-    "lodash": "^4.17.11",
-    "postcss": "^7.0.17",
-    "rfs": "^8.0.4",
-    "tailwindcss": "^1.0.4"
-  }
+	"name": "tailwindcss-rfs",
+	"version": "2.0.0",
+	"description": "A Tailwind CSS plugin to generate utility classes for RFS",
+	"main": "dist/index.js",
+	"scripts": {
+		"dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+	},
+	"repository": "https://github.com/aerni/tailwindcss-rfs",
+	"bugs": "https://github.com/aerni/tailwindcss-rfs/issues",
+	"keywords": [
+		"tailwind",
+		"tailwindcss",
+		"tailwindcss-plugin",
+		"tailwindcss-rfs",
+		"plugin",
+		"rfs",
+		"responsive-font",
+		"responsive-font-size"
+	],
+	"author": "aerni",
+	"license": "MIT",
+	"dependencies": {
+		"lodash": "^4.17.15",
+		"rfs": "^9.0.0",
+		"tailwindcss": "^1.1.2"
+	},
+	"devDependencies": {
+		"babel-eslint": "^9.0.0",
+		"browser-sync": "^2.26.7",
+		"browser-sync-webpack-plugin": "^2.2.2",
+		"cross-env": "^6.0.0",
+		"eslint": "^5.14.1",
+		"eslint-config-airbnb": "^17.1.0",
+		"eslint-config-prettier": "^4.1.0",
+		"eslint-config-wesbos": "0.0.19",
+		"eslint-plugin-html": "^5.0.3",
+		"eslint-plugin-import": "^2.16.0",
+		"eslint-plugin-jsx-a11y": "^6.2.1",
+		"eslint-plugin-prettier": "^3.0.1",
+		"eslint-plugin-react": "^7.12.4",
+		"eslint-plugin-react-hooks": "^1.3.0",
+		"laravel-mix": "^5.0.0",
+		"prettier": "^1.16.4"
+	}
 }
