@@ -2,6 +2,11 @@
 
 This is a Tailwind CSS plugin to generate utility classes for RFS. 
 
+## About RFS
+RFS is a unit resizing engine which automatically calculates the appropriate values based on the dimensions of the browser viewport. 
+
+[Learn more about RFS](https://github.com/twbs/rfs)
+
 **Important!**
 This plugin requires a working PostCSS setup of RFS in order to make use of the resizing engine of RFS. The plugin by itself only generates utility classes which then are transformed by RFS itself. You can check out the `webpack.mix.js` file for a working setup using Laravel Mix.
 
@@ -130,8 +135,3 @@ module.exports = {
   }
 }
 ```
-
-## About RFS
-RFS is a unit resizing engine which automatically calculates the appropriate values based on the dimensions of the browser viewport. 
-
-[Learn more about RFS](https://github.com/twbs/rfs)
