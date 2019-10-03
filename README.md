@@ -40,6 +40,12 @@ module.exports = {
       fontSizeUtilities: true,
       paddingUtilities: true,
       marginUtilities: true,
+      widthUtilities: false,
+      maxWidthUtilities: false,
+      minWidthUtilities: false,
+      heightUtilities: false,
+      maxHeightUtilities: false,
+      minHeightUtilities: false,
     })
   ]
 };
@@ -60,16 +66,22 @@ suffix: '-rfs', // default: ''
 ```
 
 #### Utilities
-By default this plugin generates utility classes for `fontSize`, `padding` and `margin`. You can choose to disable the utilities that you don't need. 
+By default this plugin generates utility classes for `fontSize`, `padding` and `margin`. Optionally you can activate the genration of utility classes for `width`, `maxWidth`, `minWidth`, `height`, `maxHeight` and `minHeight` as well.
 
 ```js
 fontSizeUtilities: true, // default: true
-paddingUtilities: false, // default: true
-marginUtilities: false, // default: true
+paddingUtilities: true, // default: true
+marginUtilities: true, // default: true
+widthUtilities: false, // default: false
+maxWidthUtilities: false, // default: false
+minWidthUtilities: false, // default: false
+heightUtilities: false, // default: false
+maxHeightUtilities: false, // default: false
+minHeightUtilities: false, // default: false
 ```
 
 ### Variants
-You can also generate variants for the classes:
+You can also generate variants for the utility classes like this:
 
 ```js
 // tailwind.config.js
@@ -78,19 +90,25 @@ module.exports = {
     rfsFontSize: ['responsive'], // default: []
     rfsPadding: ['responsive'], // default: []
     rfsMargin: ['responsive'], // default: []
+    rfsWidth: ['responsive'], // default: []
+    rfsMaxWidth: ['responsive'], // default: []
+    rfsMinWidth: ['responsive'], // default: []
+    rfsHeight: ['responsive'], // default: []
+    rfsMaxHeight: ['responsive'], // default: []
+    rfsMinHeight: ['responsive'], // default: []
   }
 };
 ```
 
 ## Generated Utility Classes
-This plugin generates utility classes based on the keys of `fontSize`, `padding` and `margin` in the `theme` section of your `tailwind.config.js`. The generated class names follow the naming convention of Tailwind. By default all generated class names have a prefix of `rfs-`.
+This plugin generates utility classes based on the keys of `fontSize`, `padding`, `margin`, `width`, `maxWidth`, `minWidth`, `height`, `maxHeight` and `minHeight` in the `theme` section of your `tailwind.config.js`. The generated class names follow the naming convention of Tailwind. By default all generated class names have a prefix of `rfs-`.
 
-### Font Size
+### fontSize
 ```css
 .rfs-text-[key]
 ```
 
-### Padding
+### padding
 ```css
 .rfs-p-[key]
 .rfs-py-[key]
@@ -101,7 +119,7 @@ This plugin generates utility classes based on the keys of `fontSize`, `padding`
 .rfs-pl-[key]
 ```
 
-### Margin
+### margin
 ```css
 .rfs-m-[key]
 .rfs-my-[key]
@@ -110,10 +128,6 @@ This plugin generates utility classes based on the keys of `fontSize`, `padding`
 .rfs-mr-[key]
 .rfs-mb-[key]
 .rfs-ml-[key]
-```
-
-### Negative Margin
-```css
 .-rfs-m-[key]
 .-rfs-my-[key]
 .-rfs-mx-[key]
@@ -123,15 +137,66 @@ This plugin generates utility classes based on the keys of `fontSize`, `padding`
 .-rfs-ml-[key]
 ```
 
-**Note: You might want to disable the `corePlugins` for `fontSizes`, `padding` and `margin` in your Tailwind configuration.**
+### width
+```css
+.rfs-w-[key]
+```
+
+### maxWidth
+```css
+.rfs-max-w-[key]
+```
+
+### minWidth
+```css
+.rfs-min-w-[key]
+```
+
+### height
+```css
+.rfs-h-[key]
+```
+
+### maxHeight
+```css
+.rfs-max-h-[key]
+```
+
+### minHeight
+```css
+.rfs-min-h-[key]
+```
+
+**Note: You might want to disable the `corePlugins` in your Tailwind configuration for the utilities that you enabled in the options.**
 
 ```js
 // tailwind.config.js
 module.exports = {
+  plugins: [
+    require('tailwindcss-rfs')({
+      prefix: 'rfs-',
+      suffix: '',
+      fontSizeUtilities: true,
+      paddingUtilities: true,
+      marginUtilities: true,
+      widthUtilities: true,
+      maxWidthUtilities: true,
+      minWidthUtilities: true,
+      heightUtilities: true,
+      maxHeightUtilities: true,
+      minHeightUtilities: true,
+    })
+  ],
   corePlugins: {
     fontSize: false,
     padding: false,
     margin: false,
+    width: false,
+    maxWidth: false,
+    minWidth: false,
+    height: false,
+    maxHeight: false,
+    minHeight: false,
   }
 }
 ```
