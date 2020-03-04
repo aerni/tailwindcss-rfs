@@ -1,3 +1,7 @@
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/aerni/tailwindcss-rfs?style=flat-square)
+![npm](https://img.shields.io/npm/dt/tailwindcss-rfs?style=flat-square)
+![GitHub](https://img.shields.io/github/license/aerni/tailwindcss-rfs?style=flat-square)
+
 # RFS Plugin for Tailwind CSS
 
 This is a Tailwind CSS plugin to generate utility classes for RFS. 
@@ -22,7 +26,7 @@ Add the plugin to your Tailwind configuration:
 // tailwind.config.js
 module.exports = {
   plugins: [
-    require('tailwindcss-rfs')()
+    require('tailwindcss-rfs')
   ]
 };
 ```
@@ -66,7 +70,7 @@ suffix: '-rfs', // default: ''
 ```
 
 #### Utilities
-By default this plugin generates utility classes for `fontSize`, `padding` and `margin`. Optionally you can activate the genration of utility classes for `width`, `maxWidth`, `minWidth`, `height`, `maxHeight` and `minHeight` as well.
+By default this plugin generates utility classes for `fontSize`, `padding` and `margin`. Optionally you can activate the generation of utility classes for `width`, `maxWidth`, `minWidth`, `height`, `maxHeight` and `minHeight` as well.
 
 ```js
 fontSizeUtilities: true, // default: true
