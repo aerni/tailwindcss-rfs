@@ -14,6 +14,13 @@ RFS is a unit resizing engine which automatically calculates the appropriate val
 **Important!**
 This plugin requires a working PostCSS setup of RFS in order to make use of the resizing engine of RFS. The plugin by itself only generates utility classes which then are transformed by RFS itself. You can check out the `webpack.mix.js` file for a working setup using Laravel Mix.
 
+## Requirements
+This plugin requires Tailwind CSS v1.2.0 or later. If your project uses an older version of Tailwind, you should install v2.1.1 of this plugin.
+
+```yarn
+yarn add tailwindcss-rfs@2.1.1
+```
+
 ## Installation
 ```
 yarn add tailwindcss-rfs
