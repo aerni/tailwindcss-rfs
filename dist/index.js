@@ -34,17 +34,17 @@ module.exports = plugin.withOptions(userOptions => ({ addUtilities, e, theme, va
 
     const paddingGenerators = [
         (size, modifier) => ({
-            [`.${e(`rfs-p-${modifier}`)}`]: { padding: `rfs(${size})` },
+            [`.${e(`${options.prefix}p-${modifier}`)}`]: { padding: `rfs(${size})` },
         }),
         (size, modifier) => ({
-            [`.${e(`rfs-py-${modifier}`)}`]: { 'padding-top': `rfs(${size})`, 'padding-bottom': `rfs(${size})` },
-            [`.${e(`rfs-px-${modifier}`)}`]: { 'padding-left': `rfs(${size})`, 'padding-right': `rfs(${size})` },
+            [`.${e(`${options.prefix}py-${modifier}`)}`]: { 'padding-top': `rfs(${size})`, 'padding-bottom': `rfs(${size})` },
+            [`.${e(`${options.prefix}px-${modifier}`)}`]: { 'padding-left': `rfs(${size})`, 'padding-right': `rfs(${size})` },
         }),
         (size, modifier) => ({
-            [`.${e(`rfs-pt-${modifier}`)}`]: { 'padding-top': `rfs(${size})` },
-            [`.${e(`rfs-pr-${modifier}`)}`]: { 'padding-right': `rfs(${size})` },
-            [`.${e(`rfs-pb-${modifier}`)}`]: { 'padding-bottom': `rfs(${size})` },
-            [`.${e(`rfs-pl-${modifier}`)}`]: { 'padding-left': `rfs(${size})` },
+            [`.${e(`${options.prefix}pt-${modifier}`)}`]: { 'padding-top': `rfs(${size})` },
+            [`.${e(`${options.prefix}pr-${modifier}`)}`]: { 'padding-right': `rfs(${size})` },
+            [`.${e(`${options.prefix}pb-${modifier}`)}`]: { 'padding-bottom': `rfs(${size})` },
+            [`.${e(`${options.prefix}pl-${modifier}`)}`]: { 'padding-left': `rfs(${size})` },
         }),
     ];
 
