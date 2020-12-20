@@ -17,7 +17,9 @@ mix.postCss('example/src/app.css', 'example/dist', [
         enableRfs: true, // Default: true
         mode: 'min-media-query', // Default: min-media-query
     }),
-]).browserSync({
+])
+
+mix.browserSync({
     proxy: false,
     watch: true,
     server: 'example',
