@@ -25,7 +25,9 @@
 	"author": "aerni",
 	"license": "MIT",
 	"dependencies": {
+		"autoprefixer": "^10.1.0",
 		"lodash": "^4.17.20",
+		"postcss": "^8.2.1",
 		"rfs": "^9.0.3",
 		"tailwindcss": "^2.0.2"
 	},

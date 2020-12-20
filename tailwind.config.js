@@ -1,4 +1,9 @@
 module.exports = {
+    purge: [],
+    darkMode: false,
+    theme: {
+        extend: {},
+    },
     variants: {
         rfsFontSize: [], // default: []
         rfsPadding: [], // default: []
@@ -36,4 +41,4 @@ module.exports = {
         maxHeight: true,
         minHeight: true,
     },
-};
+}
