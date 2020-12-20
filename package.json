@@ -25,7 +25,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"lodash": "^4.17.15",
-		"rfs": "^9.0.2",
+		"rfs": "^9.0.3",
 		"tailwindcss": "^1.2.0"
 	},
 	"devDependencies": {
