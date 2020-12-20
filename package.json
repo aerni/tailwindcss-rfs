@@ -4,12 +4,12 @@
 	"description": "A Tailwind CSS plugin to generate utility classes for RFS",
 	"main": "dist/index.js",
 	"scripts": {
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
-        "production": "mix --production"
-    },
+		"development": "mix",
+		"watch": "mix watch",
+		"watch-poll": "mix watch -- --watch-options-poll=1000",
+		"hot": "mix watch --hot",
+		"production": "mix --production"
+	},
 	"repository": "https://github.com/aerni/tailwindcss-rfs",
 	"bugs": "https://github.com/aerni/tailwindcss-rfs/issues",
 	"keywords": [
@@ -28,7 +28,7 @@
 		"laravel-mix": "^6.0.0",
 		"lodash": "^4.17.15",
 		"rfs": "^9.0.3",
-		"tailwindcss": "^1.2.0"
+		"tailwindcss": "^2.0.2"
 	},
 	"devDependencies": {
 		"babel-eslint": "^9.0.0",
