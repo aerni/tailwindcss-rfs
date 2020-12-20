@@ -26,7 +26,6 @@
 	"license": "MIT",
 	"dependencies": {
 		"autoprefixer": "^10.1.0",
-		"cross-env": "^7.0.3",
 		"laravel-mix": "^6.0.0",
 		"lodash": "^4.17.20",
 		"postcss": "^8.2.1",
