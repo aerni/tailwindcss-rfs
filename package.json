@@ -30,8 +30,6 @@
 		"tailwindcss": "^2.0.2"
 	},
 	"devDependencies": {
-		"browser-sync": "^2.26.7",
-		"browser-sync-webpack-plugin": "^2.2.2",
 		"cross-env": "^6.0.3",
 		"laravel-mix": "^6.0.0"
 	}

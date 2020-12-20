@@ -18,9 +18,3 @@ mix.postCss('example/src/app.css', 'example/dist', [
         mode: 'min-media-query', // Default: min-media-query
     }),
 ])
-
-mix.browserSync({
-    proxy: false,
-    watch: true,
-    server: 'example',
-});
