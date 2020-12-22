@@ -36,17 +36,28 @@ module.exports = {
 }
 ```
 
-## Example Output
+## Example
 ```css
 /* Original */
+
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
 }
 
+.p-24 {
+  padding: 6rem;
+}
+
+
 /* RFS Variant */
+
 .rfs\:text-6xl {
   font-size: calc(1.5rem + 3vw);
   line-height: 1;
+}
+
+.rfs\:p-24 {
+  padding: calc(1.725rem + 5.7vw);
 }
 ```
