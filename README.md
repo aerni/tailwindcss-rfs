@@ -15,7 +15,7 @@ npm install tailwindcss-rfs
 ```
 
 ## Usage
-1. Add the plugin to your Tailwind config
+1. Add `tailwindcss-rfs` to the plugins array of your Tailwind config
 2. Add the `rfs` variant to any utility you want
 
 ```js
