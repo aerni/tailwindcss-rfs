@@ -1,6 +1,6 @@
 {
 	"name": "tailwindcss-rfs",
-	"version": "3.0.1",
+	"version": "4.0.0",
 	"description": "A Tailwind CSS plugin to generate utility classes for RFS",
 	"main": "dist/index.js",
 	"scripts": {
