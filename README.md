@@ -15,8 +15,17 @@ npm install tailwindcss-rfs
 ```
 
 ## Usage
-1. Add `tailwindcss-rfs` to the plugins array of your Tailwind config
-2. Add the `rfs` variant to the desired core plugins
+Add `tailwindcss-rfs` to the plugins array of your Tailwind config:
+
+```js
+module.exports = {
+    plugins: [
+        require('tailwindcss-rfs')
+    ],
+}
+```
+
+If you are running a Tailwind CSS version `lower than v3.0`, you also have to add the `rfs` variant to the desired core plugins:
 
 ```js
 // tailwind.config.js
@@ -36,22 +45,18 @@ module.exports = {
 }
 ```
 
-## Example Output
+Simply apply the `rfs` variant to any sizing utility. This will pass utility's value to the `rfs()` function and output the processed value.
+
+**Template:**
+```html
+<div class="rfs:p-24">
+    <p class="rfs:text-6xl">This text resizes magically!</p>
+</div>
+```
+
+**Output:**
+
 ```css
-/* Original */
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.p-24 {
-  padding: 6rem;
-}
-
-
-/* RFS Variant */
-
 .rfs\:text-6xl {
   font-size: calc(1.5rem + 3vw);
   line-height: 1;
@@ -60,4 +65,12 @@ module.exports = {
 .rfs\:p-24 {
   padding: calc(1.725rem + 5.7vw);
 }
+```
+
+If you are on Tailwind CSS `3.0+` you may also stack the `rfs` variant with other variants like `hover`:
+
+```html
+<div class="rfs:p-24 hover:rfs:p-20">
+    <p class="rfs:text-6xl hover:rfs:text-5xl">This text resizes magically!</p>
+</div>
 ```
