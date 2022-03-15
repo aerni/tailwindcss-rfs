@@ -25,8 +25,8 @@
 	"author": "aerni",
 	"license": "MIT",
 	"dependencies": {
-		"laravel-mix": "^6.0.0",
-		"rfs": "^9.0.3",
+		"laravel-mix": "^6.0.43",
+		"rfs": "^9.0.6",
 		"tailwindcss": "^3.0.23"
 	}
 }
