@@ -1,6 +1,6 @@
 {
 	"name": "tailwindcss-rfs",
-	"version": "4.0.0",
+	"version": "5.0.0",
 	"description": "A Tailwind CSS plugin to generate utility classes for RFS",
 	"main": "dist/index.js",
 	"scripts": {
@@ -26,7 +26,7 @@
 	"license": "MIT",
 	"dependencies": {
 		"laravel-mix": "^6.0.43",
-		"rfs": "^9.0.6",
+		"rfs": "^10.0",
 		"tailwindcss": "^3.0.23"
 	}
 }
